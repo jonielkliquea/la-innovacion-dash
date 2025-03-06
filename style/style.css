@@ -1,0 +1,113 @@
+    #logout {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10000;
+      background-color: red;
+      border-radius: 50%;
+      color: white;
+      padding: 12px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    #logout:hover {
+      background-color: darkred;
+    }
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex: 1;
+}
+
+footer.bg-dark.text-light.text-center.py-4 {
+    position: sticky !important;
+    bottom: 0px;
+    width: 110%;
+}
+    /* MENU */
+#menu-container {
+    display: flex;
+}
+.menu-bar {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    left: 20px;
+    fill: #999999;
+
+}
+
+.main-menu-icon {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.menu-items {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    width: 4em;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-items:hover {
+    width:12em;
+
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    flex-wrap: nowrap;
+    width: max-content;
+    text-decoration: none !important;
+}
+
+.menu-item:hover {
+    background-color: #c8e8c8;
+    width: 100%
+}
+.menu-item:hover .item-label {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+.material-icons {
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.item-label {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.fs-9 {
+    font-size: 0.8em;;
+}
+
+footer {
+  margin-top: auto;
+}

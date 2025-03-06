@@ -40,18 +40,17 @@ function showMenu() {
                 </div>
             </div>`;
 
-        // Selecciona los elementos de menú después de agregar el HTML
         const menuIcon = document.getElementById('menu-icon');
         const menuItems = document.getElementById('menu-items');
 
-        // Agrega el evento de clic para mostrar/ocultar los elementos del menú
+
         menuIcon.addEventListener('click', () => {
             menuItems.style.display = menuItems.style.display === 'none' ? 'block' : 'none';
         });
     }
 }
 
-// Llama a la función para mostrar el menú
+
 showMenu();
 
 
